@@ -1,0 +1,30 @@
+{
+  "name": "front-assesment",
+  "version": "1.0.0",
+  "description": "front-assesment",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "publish-react": "cd web && npm run build && cd .. && rm -rf ./src/public-react && mv ./web/build ./src/public-react"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/poncegui/front-assesment.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "poncegui",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/poncegui/front-assesment/issues"
+  },
+  "homepage": "https://github.com/poncegui/front-assesment#readme",
+  "dependencies": {
+    "better-sqlite3": "^7.5.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.3"
+  }
+}
